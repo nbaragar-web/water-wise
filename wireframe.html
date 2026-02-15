@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Wise - Wireframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .wireframe-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            border: 3px solid #000;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        /* Header */
+        .header {
+            padding: 20px;
+            border-bottom: 2px solid #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-circle {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            background: white;
+        }
+        
+        .logo-text {
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+        }
+        
+        .site-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .menu-btn {
+            border: 2px solid #000;
+            padding: 8px 20px;
+            background: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        /* Hero Image */
+        .hero-image {
+            height: 200px;
+            border-bottom: 2px solid #000;
+            background: white;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-image svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .image-label {
+            position: absolute;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        /* Hero Text Section */
+        .hero-text {
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #000;
+        }
+        
+        .tagline {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .underline {
+            width: 150px;
+            height: 2px;
+            background: #000;
+            margin: 15px auto;
+        }
+        
+        .cta-button {
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px 30px;
+            background: white;
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        /* Feature Cards */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border-bottom: 2px solid #000;
+        }
+        
+        .feature-card {
+            padding: 30px 20px;
+            text-align: center;
+            border-right: 2px solid #000;
+        }
+        
+        .feature-card:last-child {
+            border-right: none;
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        
+        .feature-icon svg {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .feature-title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        /* Education Section */
+        .education {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 2px solid #000;
+        }
+        
+        .education-text {
+            padding: 30px;
+            border-right: 2px solid #000;
+        }
+        
+        .education-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .text-lines {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .text-line {
+            height: 2px;
+            background: #ccc;
+        }
+        
+        .education-image {
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .education-image svg {
+            width: 100%;
+            height: 150px;
+        }
+        
+        /* Footer */
+        .footer {
+            padding: 25px;
+            text-align: center;
+            background: white;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+        
+        .footer-link {
+            color: #333;
+        }
+        
+        @media (max-width: 650px) {
+            .wireframe-container {
+                margin: 10px;
+                max-width: 100%;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .feature-card {
+                border-right: none;
+                border-bottom: 2px solid #000;
+            }
+            
+            .feature-card:last-child {
+                border-bottom: none;
+            }
+            
+            .education {
+                grid-template-columns: 1fr;
+            }
+            
+            .education-text {
+                border-right: none;
+                border-bottom: 2px solid #000;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-section">
+                <div class="logo-circle"></div>
+                <div>
+                    <div class="logo-text">LOGO</div>
+                    <div class="site-name">Water Wise</div>
+                </div>
+            </div>
+            <div class="menu-btn">MENU</div>
+        </div>
+        
+        <!-- Hero Image -->
+        <div class="hero-image">
+            <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="0" x2="600" y2="200" stroke="#ccc" stroke-width="1"/>
+                <line x1="600" y1="0" x2="0" y2="200" stroke="#ccc" stroke-width="1"/>
+            </svg>
+            <div class="image-label">Image</div>
+        </div>
+        
+        <!-- Hero Text -->
+        <div class="hero-text">
+            <div class="tagline">Save Water. Save Tomorrow.</div>
+            <div class="underline"></div>
+            <div class="cta-button">Call to Action</div>
+        </div>
+        
+        <!-- Features -->
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 10 C20 20, 20 30, 25 40 C30 30, 30 20, 25 10 Z" fill="none" stroke="#333" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="feature-title">Track Usage</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 5 L35 15 L35 40 L15 40 L15 15 Z" fill="none" stroke="#333" stroke-width="2"/>
+                        <polyline points="20,22 23,27 30,18" fill="none" stroke="#333" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="feature-title">Reduce Waste</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="30" r="12" fill="none" stroke="#333" stroke-width="2"/>
+                        <line x1="25" y1="5" x2="25" y2="18" stroke="#333" stroke-width="2"/>
+                        <line x1="15" y1="10" x2="20" y2="20" stroke="#333" stroke-width="2"/>
+                        <line x1="35" y1="10" x2="30" y2="20" stroke="#333" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="feature-title">Learn Tips</div>
+            </div>
+        </div>
+        
+        <!-- Education Section -->
+        <div class="education">
+            <div class="education-text">
+                <div class="education-title">Education</div>
+                <div class="text-lines">
+                    <div class="text-line"></div>
+                    <div class="text-line"></div>
+                    <div class="text-line"></div>
+                    <div class="text-line"></div>
+                </div>
+            </div>
+            <div class="education-image">
+                <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="200" y2="150" stroke="#ccc" stroke-width="1"/>
+                    <line x1="200" y1="0" x2="0" y2="150" stroke="#ccc" stroke-width="1"/>
+                    <text x="100" y="80" text-anchor="middle" fill="#666" font-size="16">Image</text>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-links">
+                <div class="footer-link">About</div>
+                <div class="footer-link">Contact</div>
+                <div class="footer-link">Resources</div>
+                <div class="footer-link">Social Icons</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

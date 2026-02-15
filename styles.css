@@ -1,0 +1,348 @@
+/* Water Wise - Sustainable Water Practices */
+/* Wireframe-inspired Clean Design */
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #28a745;
+  --accent-color: #17a2b8;
+  --light-bg: #ffffff;
+  --border-color: #333;
+  --text-dark: #333;
+  --text-light: #666;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: #f5f5f5;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  box-shadow: 0 2px 10px rgba(0, 123, 255, 0.2);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.logo-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.logo-label {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu-button {
+  border: 2px solid white;
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 80px;
+  background: linear-gradient(135deg, #e3f2fd, #b3e5fc);
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+  border-bottom: 2px solid rgba(0, 123, 255, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-image svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e3f2fd, #b3e5fc);
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.hero-underline {
+  width: 150px;
+  height: 3px;
+  background: var(--border-color);
+  margin: 20px auto;80px;
+  border-bottom: 3px solid var(--border-color);
+  background: white;
+}
+
+.features-section {
+  background: white;
+}
+
+.education-section {
+  background: #fafafa;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.feature-card {
+  padding: 50px 30px;
+  text-align: center;
+  border-right: 2px solid rgba(0, 123, 255, 0.1);
+  background: white;
+  transition: all 0.3s;
+}
+
+.feature-card:last-child {
+  border-right: none;
+}
+
+.feature-card:hover {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+}
+
+.feature-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+/* Education Section */
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.education-text {
+  padding-right: 20px;
+}
+
+.education-text h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.education-text p {
+  margin-bottom: 20px;
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+.education-image {
+  width: 100%;
+  height: 350px;
+  border: 2px solid rgba(0, 123, 255, 0.2);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
+}
+
+.education-image svg {
+  width: 100%;
+  height: 100%;
+  display: blocklateY(-50%);
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-text);
+  color: var(--light-text);
+  text-align: center;
+  padding: 2rem 0;
+}white;
+  text-align: center;
+  padding: 40px 0;
+  border-top: 3px solid var(--border-color);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.footer-links a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    border-right: none;
+    border-bottom: 3px solid var(--border-color);
+  }
+
+  .feature-card:last-child {
+    border-bottom: none;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-text {
+    padding-right: 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo-title {
+    font-size: 18px;
+  }
+
+  .menu-button {
+    padding: 8px 15px;
+    font-size: 11px
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content-main {
+    padding: 25px;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+}
