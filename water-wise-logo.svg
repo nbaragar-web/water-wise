@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Water Wise logo</title>
+  <desc id="desc">A minimal droplet with a small leaf, representing mindful water use.</desc>
+  <defs>
+    <linearGradient id="drop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6fd3ff"/>
+      <stop offset="100%" stop-color="#1b87ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="24" fill="#ffffff" fill-opacity="0"/>
+  <path d="M60 16 C52 30, 40 44, 40 64 C40 84, 52 98, 60 104 C68 98, 80 84, 80 64 C80 44, 68 30, 60 16 Z" fill="url(#drop)"/>
+  <path d="M64 58 C78 52, 92 56, 98 70 C84 76, 70 74, 60 66" fill="#28a745"/>
+</svg>
